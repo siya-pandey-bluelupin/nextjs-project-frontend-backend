@@ -37,7 +37,7 @@ export async function getStaticPaths() {
    
    client.close();
     return {
-        fallback: blocking,//all supported values existt , other than ths 404 error if true , generate dynamically on the server for somthing not existing currently 
+        fallback: 'blocking',//all supported values existt , other than ths 404 error if true , generate dynamically on the server for somthing not existing currently 
         //true or blocking : if cant find immediately , geneerate the page on demand and cache after
         // true : immediately return empty page -> handle on own
         // blocking : user will not see untill finished page is served
