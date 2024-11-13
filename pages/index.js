@@ -83,7 +83,7 @@ export async function getStaticProps() {//helps with cachingfetch('/api/meetups'
                 id: meetup._id.toString(),
             }))
         },
-        revalidate: 10
+        revalidate: 1
     }
 }
 
